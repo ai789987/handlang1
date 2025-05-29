@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แปลภาษามือ</title>
+    <meta name="keywords" content="ภาษามือ,แปลภาษามือ">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main2.css') }}">
+</head>
+<body>
+    <header>
+     <div class="container">
+       <h1>ภาษาไทย ⮕ ภาษามือ</h1>
+       <form action="{{ url_for('translate') }}" method="POST">
+        <input type="text" name="word" placeholder="พิมพ์คำภาษาไทย..." required>
+          <button type="submit">แปล</button>
+       </form>
+     </div>
+   </header>
+   <br><br><br><br><br><br><br><br><a href="{{ url_for('add_word') }}">เพิ่มคำใหม่</a>  <!--ไปเพิ่มคำ-->
+</body>
+</html>

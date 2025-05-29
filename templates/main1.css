@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+     font-style: normal;
+}
+
+body {
+  background: #f7bacc;
+}
+
+/* แถบสีเขียว */
+.top-bar {
+  width: 100vw;             
+  height: 150px;               
+  background-color: #CCE7D2; 
+  position: absolute;         
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* ขอบหัวข้อ */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    height: 120px;
+    background: url('../img/image7.svg') no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+    
+}
+
+nav{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+}
+.logo h1 {
+    color: #2A1C1C;
+    font-size: 80px;
+}
+
+.header-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 3rem;
+    overflow: auto;
+}
+
+.header-btn a{ 
+    display: block;
+}
+
+/* ปุ่มบน */
+.purchase {
+    background: #91D29E;
+    color:#2A1C1C ;
+    text-decoration: none;
+    padding: 1.5rem 8rem;
+    border-radius: 10px;
+}
+
+/* ปุ่มล่าง */
+.learnmore {
+    background:#91D29E;
+    color:#2A1C1C;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 1.5rem 8rem;
+    max-width: 90vw;
+    box-sizing: border-box;
+}

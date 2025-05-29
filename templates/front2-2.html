@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แปลภาษามือ</title>
+    <meta name="keywords" content="ภาษามือ,แปลภาษามือ">
+
+    <link rel="stylesheet" href="main2-2.css">
+    
+    
+</head>
+<body>
+
+    <h1>ผลลัพธ์การแปล</h1>
+
+    <p><strong>คำที่คุณป้อน:</strong> {{ word }}</p>
+    {% if image %}
+    <img src="{{ url_for('static', filename=image) }}" alt="ภาพประกอบ" style="width: 300px; margin-top: 20px;">
+
+    {% if video %}
+        <video controls>
+            <source src="{{ url_for('static', filename=video) }}" type="video/mp4">
+            เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+        </video>
+    {% else %}
+        <p class="not-found">❌ ไม่พบวิดีโอสำหรับคำนี้ในระบบ</p>
+    {% endif %}
+
+    <br><br>
+    <a href="{{ url_for('index') }}">🔙 กลับหน้าหลัก</a>
+
+</body>
+</html>
