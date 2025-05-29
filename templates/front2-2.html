@@ -12,11 +12,12 @@
 </head>
 <body>
 
-    <h1>ผลลัพธ์การแปล</h1>
+    <h1>ภาษามือ</h1>
 
     <p><strong>คำที่คุณป้อน:</strong> {{ word }}</p>
     {% if image %}
-    <img src="{{ url_for('static', filename=image) }}" alt="ภาพประกอบ" style="width: 300px; margin-top: 20px;">
+    <img src="{{ url_for('static', filename=image) }}" alt="ภาพประกอบ" style="width: 300px; margin-top: 20px;"> 
+    {% endif %}
 
     {% if video %}
         <video controls>
