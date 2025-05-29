@@ -6,7 +6,7 @@
     <title>แปลภาษามือ</title>
     <meta name="keywords" content="ภาษามือ,แปลภาษามือ">
 
-    <link rel="stylesheet" href="main2-2.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main2-2.css') }}">
     
     
 </head>
@@ -14,7 +14,7 @@
 
     <h1>ภาษามือ</h1>
 
-    <p><strong>คำที่คุณป้อน:</strong> {{ word }}</p>
+    <h2>{{ word }}</h2>
     {% if image %}
     <img src="{{ url_for('static', filename=image) }}" alt="ภาพประกอบ" style="width: 300px; margin-top: 20px;"> 
     {% endif %}
