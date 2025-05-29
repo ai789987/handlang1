@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>เพิ่มคำใหม่</title>
+</head>
+<body>
+    <h1>เพิ่มคำใหม่</h1>
+    <form action="{{ url_for('add_word') }}" method="post" enctype="multipart/form-data">
+        <label for="word">คำศัพท์:</label>
+        <input type="text" name="word" required>
+        <br><br>
+
+        <label for="video">เลือกไฟล์วิดีโอ:</label>
+        <input type="file" name="video" required>
+        <br><br>
+
+        <button type="submit">เพิ่มคำ</button>
+    </form>
+
+    <br><a href="{{ url_for('index') }}">🔙 กลับ</a>
+</body>
+</html>
